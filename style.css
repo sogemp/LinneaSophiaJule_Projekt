@@ -1,0 +1,111 @@
+
+/* Allgemeine Stile für den Body */
+body {
+    font-family: sans-serif;
+    background-color: #eb001f; /* Hellgrauer Hintergrund */
+    color: #eb001f; /* Dunkelgraue Textfarbe */
+}
+
+/* Stile für die Haupt-App-Container */
+.stApp {
+    max-width: 1100px; /* Maximale Breite des Inhalts */
+    margin: 0 auto; /* Zentriert den Inhalt horizontal */
+    padding: 20px;
+}
+
+/* Stile für Überschriften (h1, h2, etc.) */
+h1, h2, h3, h4, h5, h6 {
+    color: #336699; /* Blaue Überschriften */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Stile für Absätze */
+p {
+    line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+    margin-bottom: 15px;
+}
+
+/* Stile für Links */
+a {
+    color: #007bff; /* Blaue Links */
+    text-decoration: none; /* Keine Unterstreichung */
+}
+
+a:hover {
+    text-decoration: underline; /* Unterstreichung beim Hover */
+}
+
+/* Stile für Buttons */
+.stButton>button {
+    color: white;
+    background-color: #eb001f;
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;      /* Feste Breite (anpassen!) */
+    height: 70px;     /* Feste Höhe (anpassen!) */
+    box-sizing: border-box;
+}
+
+.stButton>button:hover {
+    background-color: #e5d5fe; /* Dunkleres Grün beim Hover */
+}
+
+/* Stile für Text-Input-Felder */
+.stTextInput>label {
+    color: #555; /* Dunkelgraue Beschriftung */
+    font-weight: bold;
+}
+
+.stTextInput>div>div>input {
+    border: 1px solid #eb001f; /* Grauer Rahmen */
+    border-radius: 4px; /* Abgerundete Ecken */
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+/* Stile für Radio-Buttons und Checkboxen */
+.stRadio>label,
+.stCheckbox>label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Stile für Markdown-Text (z.B. für Hervorhebungen) */
+.highlighted-text {
+    color: darkblue;
+    font-weight: bold;
+    background-color: #ffffcc; /* Hellgelber Hintergrund */
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Stile für Seitenleiste */
+.sidebar .sidebar-content {
+    background-color: #e1e8f2; /* Hellblaue Seitenleiste */
+}
+
+/* Anpassung der Breite der Sidebar (optional) */
+[data-testid="stSidebar"] {
+    width: 300px !important; /* Breite der Seitenleiste */
+}
+
+/* Responsive Design (optional) */
+@media (max-width: 768px) {
+    .stApp {
+        padding: 10px; /* Weniger Abstand auf kleinen Bildschirmen */
+    }
+}
+
+/* Beispiel für eine spezielle Klasse für bestimmte Texte */
+.special-text {
+    font-style: italic;
+    color: #888; /* Hellgraue Farbe */
+}
